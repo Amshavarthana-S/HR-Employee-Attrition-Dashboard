@@ -17,6 +17,8 @@ It is designed to support **HR leaders in data-driven decision-making** to impro
 
 ### Page 2: Employee Well-being & Details
 ![Satisfaction Details](page2.png)
+[▶ Watch Dashboard Demo](https://github.com/Amshavarthana-S/HR-Employee-Attrition-Dashboard/raw/main/Recording%20.mp4)
+
 
 ## Key Insights
 * **Overtime:** Employees working overtime are 3x more likely to leave.
