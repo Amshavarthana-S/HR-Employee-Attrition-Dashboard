@@ -1,48 +1,117 @@
-# HR Employee Attrition Analysis 📊
+# Employee Attrition Prediction & Risk Analysis 📊🤖
 
-## Project Overview
-This project analyzes employee turnover for a workforce of 1,470 employees. Using Power BI, I identified key factors causing attrition, such as Overtime, Job Role, and Monthly Income.
+## 📌 Project Overview
+This project analyzes and predicts employee attrition for a workforce of 1,470 employees.
 
-## Dashboard Overview
-This dashboard provides a high-level and detailed view of:
-* **Attrition Analysis:** Identifying high-risk departments and job roles.
-* **Employee Sentiment:** Tracking Job Satisfaction and Work-Life Balance.
-* **Workforce Demographics:** Age, Gender, and Education field distributions.
-* **Tenure & Growth:** Analyzing years at company vs. promotion cycles.
+It combines:
+- 📊 Power BI Dashboard (Business Intelligence)
+- 🤖 Machine Learning Model (Predictive Analytics)
 
-It is designed to support **HR leaders in data-driven decision-making** to improve employee retention and engagement.
+The goal is to help HR teams identify high-risk employees early and take preventive action.
+
+---
+
+## 🎯 Business Problem
+Employee turnover increases hiring costs, reduces productivity, and impacts morale.  
+This project identifies key drivers of attrition and builds a predictive model to estimate employee risk scores.
+
+---
+
+# 📊 Dashboard Overview (Power BI)
+
+The dashboard provides both executive and operational insights:
+
+### 🔹 Executive View
+- Total Employees
+- Employees Left
+- Attrition Rate
+- Average Age & Tenure
+- Department-wise Attrition
+
+### 🔹 Detailed Analysis
+- Attrition by Job Role
+- Attrition by Overtime
+- Job Satisfaction & Work-Life Balance
+- Performance vs Salary Hike
+- Interactive Employee Directory with Heatmap formatting
+
+---
+
 ## 🖼️ Dashboard Preview
-### Page 1: Executive Performance
-![Executive Overview](page1.png)
+
+### Page 1: Executive Overview
+![Executive Overview](images/page1.png)
 
 ### Page 2: Employee Well-being & Details
-![Satisfaction Details](page2.png)
-[▶ Watch Dashboard Demo](https://github.com/Amshavarthana-S/HR-Employee-Attrition-Dashboard/raw/main/Recording%20.mp4)
+![Satisfaction Details](images/page2.png)
 
+---
 
-## Key Insights
-* **Overtime:** Employees working overtime are 3x more likely to leave.
-* **High Risk Roles:** Sales Representatives show the highest turnover rate at 40%.
-* **Income Factor:** Attrition is concentrated among younger employees with lower monthly income.
+# 🤖 Machine Learning Model
 
-## 📈 Visualizations Included
+## Model Objective
+Predict whether an employee is likely to leave and assign a **Risk Score (0–1 probability).**
 
-### 📅 Attrition & Risk Analysis
-* **Attrition by Job Role:** Identifying roles with the highest turnover (Sales Reps).
-* **Attrition by Overtime:** Visualizing the direct link between OT and exits.
+## Models Used
+- Logistic Regression
+- Random Forest Classifier
 
-### 😊 Sentiment & Performance
-* **Satisfaction vs. Department:** Identifying burnout areas within the organization.
-* **Performance vs. Salary Hike:** Analyzing if high performers are being rewarded fairly.
+## Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- Confusion Matrix
 
-### 💰 Employee Detail Directory (Excel Style)
-* **Detail Table:** A granular view of all employees with **Heatmap formatting** for Monthly Income.
-* **Slicers:** Interactive filters for Department, Education, and Business Travel.
-* 
-## 🛠️ Tools & Technologies Used
+Recall was prioritized to ensure high detection of at-risk employees.
 
-* **Microsoft Power BI**
-* **Power Query** – Data cleaning and ETL processes.
-* **DAX (Data Analysis Expressions)** – For advanced measures (Attrition Rate, Avg Tenure).
-* **Data Modeling** – Optimized star schema for performance.
-* **UI/UX Design** – Custom navigation bar and KPI card formatting.
+---
+
+## 📈 Key Predictive Drivers
+
+Top factors influencing attrition:
+
+- Overtime
+- Low Job Satisfaction
+- Low Work-Life Balance
+- Lower Monthly Income
+- Sales Representative Role
+
+---
+
+## 🔥 Risk Scoring System
+
+Each employee is assigned a probability score:
+
+- 0.82 → 82% risk of leaving
+- 0.12 → 12% low risk
+
+This allows HR to:
+- Monitor high-risk employees
+- Implement retention strategies
+- Optimize promotion & compensation policies
+
+---
+
+# 📊 Key Business Insights
+
+- Employees working overtime are 3x more likely to leave.
+- Sales Representatives show the highest turnover rate (~40%).
+- Younger employees with lower income show higher attrition probability.
+
+---
+
+# 🛠 Tools & Technologies Used
+
+### Data Visualization
+- Microsoft Power BI
+- Power Query
+- DAX (Attrition Rate, Avg Tenure)
+- Data Modeling (Star Schema)
+
+### Machine Learning
+- Python
+- Pandas
+- Scikit-learn
+- Jupyter Notebook
+
+---
